@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --orange: #ec543c;
+    --font: #000;
+    --font2: #fff;
+}
+.btn {
+    border: none;
+    outline: none;
+    background-color: var(--orange);
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+.btn a {
+    color: var(--font2);
+    text-decoration: none;
+}
+span {
+    color: var(--orange);
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+p{
+    color: rgb(99, 94, 94);
+}
+.para{
+    color: #fff;
+}
+/* banner section */
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.video{
+    width: 100%;
+    position: absolute;
+    /* top: 50;
+    left: 50; */
+    /* transform: translate(-50,-50); */
+    z-index: -1;
+    filter: brightness(.2);
+}
+.banner1 {
+    color: var(--font2);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    font-size: .8rem;
+}
+/* content section */
+.content {
+    margin-top: 40px !important;
+    margin: 20px;
+    padding: 0 13px;
+    word-spacing: 3px;
+}
+.content img {
+    display: block;
+    margin: 10px auto;
+}
+.content p {
+    text-align: justify;
+}
+.program {
+    text-align: center;
+}
+.program img {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.box-container {
+    margin-top: 50px;
+}
+.box {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+}
+.box img {
+    height: 95px;
+    width: 85px;
+}
+.details {
+    line-height: 13px;
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.details h4 {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.details p {
+    margin-bottom: 5px;
+}
+/* second banner */
+.banner2 {
+    background-image: url(../images/cta-bg.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+.banner3 {
+    color: var(--font2);
+    text-align: center;
+    margin: 50px 30px;
+    padding: 35px 10px;
+    font-size: .8rem;
+}
+.banner3 p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.classes{
+    padding: 0 20px;
+}
+.ourclasses{
+    text-align: center;
+    font-size: .9rem;
+}
+.ourclasses img{
+    margin: 14px auto
+}
+.btn1{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    width: 100%;
+    padding: 2% 15%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(142, 138, 138);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.btn1 a{
+    color: var(--font);
+    font-size: 12px;
+    margin-left: 20px;
+}
+.schedules{
+    width: 100%;
+}
+.right{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 50px;
+}
+.btn1{
+    justify-content: center;
+}
+#color{
+    color: var(--orange);
+}
+.right img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.right h3,p{
+    margin-bottom: 20px;
+}
+.right p{
+    text-align: justify;
+}
+.footer{
+    text-align: center;
+    padding: 30px 20px 0;
+    font-size: .8rem;
+}
+
+/* media query */
+
+@media (min-width:768px) {
+    h2{
+        font-size: 1.6rem !important;
+    }
+    .banner1 {
+        margin: 19% auto;
+        text-align: center;
+    }
+    .banner1 h1 {
+        font-size: 3.1rem;
+    }
+    .banner1 p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .program p {
+        width: 80%;
+        margin: 2% auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .program h2 {
+        font-size: 2.5rem;
+    }
+
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 50%;
+        align-items: center;
+        padding-left: 25px;
+    }
+    .box img {
+        height: 100px;
+        width: 100px;
+    }
+    .box a {
+        font-size: .7rem;
+    }
+    .details {
+        font-size: .7rem;
+        line-height: 1rem;
+    }
+    .details h4 {
+        font-size: 1rem;
+    }
+    .banner3 {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 35px;
+        padding-left: 35px;
+        font-size: 1.5rem;
+    }
+    .banner3 p {
+        margin: 2% auto;
+        font-size: 1rem;
+        color: #fff !important;
+    }
+    .classes{
+        padding: 70px 70px 50px;
+    }
+    .training{
+        display: flex;
+    }
+    .ourclasses{
+        margin-bottom: 60px;
+    }
+    .ourclasses p{text-align: center;}
+    .left{
+        width: 40%;
+        padding-right: 30px;
+    }
+    .btn1{
+        justify-content: center;
+        margin-bottom: 18px;
+        height: 50px;
+    }
+    .btn1 a{
+        margin-left: 10px;
+        font-size: .8rem;
+    }
+    .right{
+        width: 60%;
+       padding-left: 30px;
+       font-size: .9rem;
+       margin: 0!important;
+       text-align: left !important;
+    }
+    .right img{
+        height: 200px;
+        width: 100%;
+    }
+    .footer{
+        width: 68%;
+        font-size: 1rem;
+        text-align: center;
+        margin: 20px auto;
+    }
+}
+@media(min-width:993px){
+    #banner {
+        height: 100vh;
+    }
+    .banner1 {
+        margin: 19% auto;
+        text-align: center;
+    }
+    .content{
+        padding: 0 2.2%;
+    }
+    .details {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .box a {
+        font-size: 1rem;
+    }
+    .box2{
+        padding-left: 3rem;
+    }
+    .banner3 {
+        width: 100%;
+        align-items: center;
+        margin: 5% auto;
+        text-align: center;
+        padding: 50px 290px;
+        font-size: 1.6rem;
+    }
+    .banner3 p{
+        text-align: center;
+    }
+    .training{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .right{
+        width: 60%;
+        font-size: 1.1rem;
+        margin: 0!important;
+        text-align: left;
+    }
+    .right img{
+        height: 260px;
+        border-radius: 7px;
+    }
+    .left{
+        width: 40%;
+    }
+    .schedules{
+        padding: 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    .btn1{
+        height: 70px;
+    }
+    .btn1 a{
+        font-size: 1rem;
+    }
+    .classes{
+        padding: 50px 100px;
+    }
+    .ourclasses{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .ourclasses p{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer{
+        width: 41.5%;
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 25px auto;
+    }
+}
